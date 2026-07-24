@@ -36,3 +36,35 @@ header p {
     max-height: 350px;
     width: auto;
 }
+
+/* Особенности */
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.feature-item {
+    background: #fff;
+    border-radius: 16px;
+    padding: 30px 20px;
+    flex: 1 1 250px;
+    max-width: 350px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.feature-item:hover {
+    transform: translateY(-8px);
+}
+
+.feature-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #16213e;
+}
