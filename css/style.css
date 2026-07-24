@@ -78,3 +78,111 @@ footer {
     margin-top: 40px;
     font-size: 0.9rem;
 }
+
+/* 1-й медиа-запрос: обычные десктопы (1024px - 1366px) */
+@media (min-width: 1024px) and (max-width: 1366px) {
+    .hero {
+        max-width: 1000px;
+    }
+
+    .hero-text h2 {
+        font-size: 2rem;
+    }
+
+    .features {
+        max-width: 1000px;
+    }
+
+    .feature-item {
+        flex: 1 1 220px;
+        max-width: 300px;
+    }
+}
+
+/* 2-й медиа-запрос: широкие десктопы (1367px - 1920px) */
+@media (min-width: 1367px) and (max-width: 1920px) {
+    .hero {
+        max-width: 1400px;
+    }
+
+    .hero-text h2 {
+        font-size: 2.8rem;
+    }
+
+    .hero-text p {
+        font-size: 1.4rem;
+    }
+
+    .hero-image img {
+        max-height: 500px;
+    }
+
+    .features {
+        max-width: 1400px;
+    }
+
+    .feature-item {
+        flex: 1 1 300px;
+        max-width: 400px;
+        padding: 40px 30px;
+    }
+
+    .feature-item h3 {
+        font-size: 1.8rem;
+    }
+
+    header h1 {
+        font-size: 3.5rem;
+    }
+}
+
+/* 3-й медиа-запрос: очень широкие экраны (1921px и выше) */
+@media (min-width: 1921px) {
+    .hero {
+        max-width: 1800px;
+    }
+
+    .hero-text h2 {
+        font-size: 3.5rem;
+    }
+
+    .hero-text p {
+        font-size: 1.6rem;
+    }
+
+    .hero-image img {
+        max-height: 600px;
+    }
+
+    .features {
+        max-width: 1800px;
+        gap: 50px;
+    }
+
+    .feature-item {
+        flex: 1 1 350px;
+        max-width: 500px;
+        padding: 50px 40px;
+    }
+
+    .feature-item h3 {
+        font-size: 2.2rem;
+    }
+
+    .feature-item p {
+        font-size: 1.2rem;
+    }
+
+    header h1 {
+        font-size: 4rem;
+    }
+
+    header p {
+        font-size: 1.6rem;
+    }
+
+    footer {
+        font-size: 1.1rem;
+        padding: 30px;
+    }
+}
